@@ -1,0 +1,147 @@
+body{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.calculator{
+    background-color: rgb(80, 80, 80);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.screen{
+    background-color: green;
+    height: 8vh;
+    width: 90%;
+    margin: 16px 0 6px 0;
+}
+
+.digits{
+    width: 90%;
+    height: 50vh;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-areas:    "CANCEL BACK POWER DIVIDE"
+                            "SEVEN EIGHT NINE MULTIPLY"
+                            "FOUR FIVE SIX SUBTRACT"
+                            "ONE TWO TREE ADD"
+                            "BRACKETS ZERO DOT EQUAL";
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.digit-0{
+    grid-area: ZERO;
+}
+
+.digit-1{
+    grid-area: ONE;
+}
+
+.digit-2{
+    grid-area: TWO;
+}
+
+.digit-3{
+    grid-area: TREE;
+}
+
+.digit-4{
+    grid-area: FOUR;
+}
+
+.digit-5{
+    grid-area: FIVE;
+}
+
+.digit-6{
+    grid-area: SIX;
+}
+
+.digit-7{
+    grid-area: SEVEN;
+}
+
+.digit-8{
+    grid-area: EIGHT;
+}
+
+.digit-9{
+    grid-area: NINE;
+}
+
+.digit-add{
+    grid-area: ADD;
+}
+
+.digit-subtract{
+    grid-area: SUBTRACT;
+}
+
+.digit-multiply{
+    grid-area: MULTIPLY;
+}
+
+.digit-divide{
+    grid-area: DIVIDE;
+}
+
+.digit-equal{
+    grid-area: EQUAL;
+}
+
+.digit-power{
+    grid-area: POWER;
+}
+
+.digit-back{
+    grid-area: BACK;
+}
+
+.digit-cancel{
+    grid-area: CANCEL;
+}
+
+.digit-brackets{
+    grid-area: BRACKETS;
+}
+
+.digit-comma{
+    grid-area: DOT;
+}
+
+.digits button{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    outline: none;
+    border: 2px solid rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+.digits button:hover{
+    transform: scale(0.96);
+}
