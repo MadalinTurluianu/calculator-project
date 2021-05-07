@@ -18,3 +18,50 @@ const digit_cancel = document.querySelector(".digit-cancel");
 const digit_brackets = document.querySelector(".digit-brackets");
 const digit_dot = document.querySelector(".digit-dot");
 const digit_power = document.querySelector(".digit-power");
+
+// --------------------------------------------- OPORATIONS FUNCTIONS
+
+function add(total,...numbers){
+    let result = total;
+    for (n of numbers) {
+        result += n;
+    }
+
+    return result;
+}
+
+function subtract(total,...numbers){
+    let result = total;
+    for (n of numbers) {
+        result -= n;
+    }
+
+    return result;
+}
+
+function multiply(total,...numbers){
+    let result = total;
+    for (n of numbers) {
+        result *= n;
+    }
+
+    return result;
+}
+
+function divide(total,...numbers){
+    let result = total;
+    for (n of numbers) {
+        result /= n;
+    }
+
+    return result;
+}
+
+function operate(operator, total, userInput = []){
+    let result = total;
+
+    if (operator === "+") {
+        result = add(total, ...userInput);
+    }
+
+}
