@@ -15,9 +15,7 @@ const digit_divide = document.querySelector(".digit-divide");
 const digit_equal = document.querySelector(".digit-equal");
 const digit_back = document.querySelector(".digit-back");
 const digit_cancel = document.querySelector(".digit-cancel");
-const digit_brackets = document.querySelector(".digit-brackets");
 const digit_dot = document.querySelector(".digit-dot");
-const digit_power = document.querySelector(".digit-power");
 
 // --------------------------------------------- OPORATIONS FUNCTIONS
 
@@ -62,6 +60,11 @@ function operate(operator, total, userInput = []){
 
     if (operator === "+") {
         result = add(total, ...userInput);
+    }else if (operator === "-") {
+        result = subtract(total, ...userInput);
+    }else if (operator === "*") {
+        result = multiply(total, ...userInput);
+    }else {
+        result = divide(total, ...userInput);
     }
-
 }

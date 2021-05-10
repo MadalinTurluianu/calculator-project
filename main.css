@@ -43,11 +43,11 @@ main{
     height: 50vh;
     margin-bottom: 16px;
     display: grid;
-    grid-template-areas:    "CANCEL BACK POWER DIVIDE"
+    grid-template-areas:    "CANCEL CANCEL BACK DIVIDE"
                             "SEVEN EIGHT NINE MULTIPLY"
                             "FOUR FIVE SIX SUBTRACT"
                             "ONE TWO TREE ADD"
-                            "BRACKETS ZERO DOT EQUAL";
+                            "DOT ZERO EQUAL EQUAL";
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -111,10 +111,6 @@ main{
     grid-area: EQUAL;
 }
 
-.digit-power{
-    grid-area: POWER;
-}
-
 .digit-back{
     grid-area: BACK;
 }
@@ -123,11 +119,7 @@ main{
     grid-area: CANCEL;
 }
 
-.digit-brackets{
-    grid-area: BRACKETS;
-}
-
-.digit-comma{
+.digit-dot{
     grid-area: DOT;
 }
 
